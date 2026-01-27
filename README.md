@@ -8,7 +8,7 @@
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
 [![Clerk](https://img.shields.io/badge/Clerk-Auth-6C47FF?style=for-the-badge&logo=clerk&logoColor=white)](https://clerk.com/)
 
-**[Live Demo](https://contesthub.vercel.app)** | **[Repository](https://github.com/magardeyash/contesthub)**
+**[Live Demo](https://contesthub-rust.vercel.app/)** | **[Repository](https://github.com/magardeyash/contesthub)**
 
 > A unified dashboard for competitive programmers to track contests and ratings across LeetCode, Codeforces, CodeChef, and AtCoder.
 
