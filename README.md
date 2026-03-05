@@ -1,4 +1,4 @@
-# 🚀 ContestHub
+# ContestHub
 ### A Unified Competitive Programming Dashboard
 
 [![Next.js](https://img.shields.io/badge/Next.js-16+-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -18,7 +18,7 @@ Built with Next.js 16, React 19, and TypeScript, this application demonstrates m
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 - **Automated Data Pipeline** – Integrated with the **CLIST API** via Vercel Cron Jobs to sync contest data daily without manual intervention.
 - **Intelligent Timezone Normalization** – Automatically converts all global contest times to **IST (Asia/Kolkata)**, eliminating manual UTC offset calculations.
@@ -29,7 +29,7 @@ Built with Next.js 16, React 19, and TypeScript, this application demonstrates m
 
 ---
 
-## 🛠️ Engineering Stack
+## Engineering Stack
 
 | Layer | Technology | Engineering Rationale |
 | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Built with Next.js 16, React 19, and TypeScript, this application demonstrates m
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 The codebase follows a modular structure with clear separation of concerns:
 
@@ -77,7 +77,7 @@ contesthub/
 └── proxy.ts                 # Clerk authentication middleware
 ```
 
-### 🧠 Key Engineering Decisions
+### Key Engineering Decisions
 
 #### 1. Multi-Tier Caching Strategy
 To minimize external API dependency and DB load, I implemented a custom caching layer:
@@ -92,7 +92,7 @@ By using **Next.js Server Actions**, I eliminated the need for boilerplate API r
 
 ---
 
-## 📂 Database Schema
+## Database Schema
 
 The application uses a straightforward relational schema with three core models:
 
@@ -129,7 +129,7 @@ The `Handle` model maintains a foreign key relationship with `User`, ensuring us
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 To run this project locally, follow these steps:
 
@@ -178,7 +178,7 @@ Navigate to [http://localhost:3000](http://localhost:3000) to view the applicati
 
 ---
 
-## ⏰ Automated Synchronization
+## Automated Synchronization
 
 The production environment uses Vercel Cron Jobs to automatically sync contest data daily at midnight UTC. Configuration is defined in `vercel.json`:
 
@@ -201,7 +201,7 @@ curl -H "Authorization: Bearer your_cron_secret" http://localhost:3000/api/cron/
 
 ---
 
-## 👨‍💻 Technical Implementation Details
+## Technical Implementation Details
 
 ### Multi-Layer Caching Strategy
 
@@ -292,7 +292,7 @@ This approach eliminates the boilerplate of creating separate API endpoints—fu
 
 ---
 
-## 🎯 Challenges & Learnings
+## Challenges & Learnings
 
 - **Handling Timezone Normalization:** I learned that storing everything in UTC and converting only at the UI layer is the only way to avoid "off-by-one" day errors in global scheduling apps.
 - **API Rate Limiting & Resilience:** Fetching data for hundreds of users requires careful handling of rate limits. I implemented cooldown periods and optimized the background sync to be non-intrusive.
